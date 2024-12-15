@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Notifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 350px;
+            height: 500px;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+        #notifications-list {
+            height: 450px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .notification-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+        .notification-item:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h2>LinkedIn Notifications</h2>
+    <div id="notifications-list"></div>
+    <script src="popup.js"></script>
+</body>
+</html>

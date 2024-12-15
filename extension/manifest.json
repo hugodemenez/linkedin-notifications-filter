@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Notifications Analyzer",
+  "version": "1.0",
+  "description": "Analyzes LinkedIn notifications in a sidebar",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
